@@ -20,89 +20,52 @@
 
 <div class="init_container">
 
-    <div class="container">
-        <div class="row">
-            <div class="col"></div>
-            <div class="col">
-
-                <h1>닉네임을 정해주세요.</h1>
-                <div class="init_config_box">
-                    <div class="init_control_box">
-                        <input type="text" class="form-control init_input" id="floatingInput" placeholder="닉네임">
-                        <button type="button" class="btn btn-secondary init_btn">확인</button>
-                    </div>
-                </div>
-
-
-            </div>
-            <div class="col"></div>
+    <h1>닉네임을 정해주세요.</h1>
+    <div class="init_config_box">
+        <div class="init_control_box">
+            <input type="text" class="form-control init_input" id="floatingInput" placeholder="닉네임">
+            <button type="button" class="btn btn-secondary check_btn">확인</button>
+            <button type="button" class="btn btn-primary enter_btn" disabled="">입장</button>                        
         </div>
     </div>
 
 </div>
 
 
+    <div class="main">
+
+        <div class="main_container">
+
+            <div class="list_box">
+
+                <ul class="chat_item">
+                    <li>
+                        <span class="uname">상대</span>                            
+                        <span class="message">안녕</span>
+                        <span class="date">2021-12-30 20-10</span>
+                    </li>
+                </ul>
 
 
 
-  <div class="container">
-    <div class="row">
-        <div class="col"></div>
-        <div class="col">
-            
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                이름 변경
-              </button>
-              
-              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">이름 변경</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-            
-                        <div class="config_box">
-                            <input type="text" class="username" placeholder="유저 이름" value="더미">
-                        </div>
-            
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">취소</button>
-                      <button type="button" class="btn btn-primary change_uname"  data-bs-dismiss="modal">변경</button>
-                    </div>
-                  </div>
-                </div>
-              </div>            
+                <ul class="chat_item me">
+                    <li>
+                        <span class="uname">나</span>
+                        <span class="message">응안냥</span>
+                        <span class="date">2021-12-30 20-10</span>
+                    </li>
+                </ul>
 
-            <div class="main_container">
-
-                <div class="list_box">
-        
-                    <ul class="chat_item">
-                        <li>
-                            <span class="date">2021-12-30 20-10</span>
-                            <span class="uname">나</span>
-                            <span class="message">안녕</span>
-                        </li>
-                    </ul>
-        
-                </div>
-        
-                <div class="control_box">
-                        <input type="text" class="form-control input_box" id="floatingInput" placeholder="메시지 입력">
-                        <button type="button" class="btn btn-dark send">전송</button>  
-                </div>    
-        
             </div>
 
+            <div class="control_box">
+                    <input type="text" class="form-control input_box" id="floatingInput" placeholder="메시지 입력">
+                    <button type="button" class="btn btn-dark send">전송</button>  
+            </div>    
+
         </div>
-        <div class="col"></div>
+
     </div>
-</div>
-
-
     
     
 

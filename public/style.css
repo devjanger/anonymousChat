@@ -1,30 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap');
+
+body{
+    background: url('/src/background.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+}
+
 .init_container{
+    background: url('/src/background.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
     position: absolute;
-    display: block;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     width: 100%;
     height: 100%;
-    background-color: skyblue;
-    
+    background-color: white;
 }
 
 .init_control_box{
     display: flex;
+    padding: 20px;
 }
 .init_control_box button{
     width: 100px;
+    margin-left: 5px;
+}
+
+
+.main{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .main_container{
     width: 500px;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+    border-radius: 5px;
 }
 
 .list_box{
-    height: 300px;
+    height: 600px;
     overflow: scroll;
+    background-color: white;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 .list_box ul{
     list-style: none;
 }
+ul.chat_item{
+    display: flex;
+    margin: 12px 12px;
+}
+ul.chat_item.me{
+    flex-direction: row-reverse;
+}
+ul.chat_item.me .message{
+    background-color: #212529;
+    color: white;
+}
+
+.chat_item span{
+    display: block;
+}
+
+.chat_item .uname{
+    font-weight: bold;
+}
+.chat_item .message{
+    padding: 5px;
+    font-size: 16px;
+    background-color: #f8f9fa;
+    font-weight: 500;
+    border-radius: 8px;
+}
+.chat_item .date{
+    font-size: 12px;
+}
+
+.alert_message{
+    text-align: center;
+}
+
+
 
 .control_box{
     display: flex;
