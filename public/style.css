@@ -1,0 +1,35 @@
+.init_container{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: skyblue;
+    
+}
+
+.init_control_box{
+    display: flex;
+}
+.init_control_box button{
+    width: 100px;
+}
+
+.main_container{
+    width: 500px;
+}
+
+.list_box{
+    height: 300px;
+    overflow: scroll;
+}
+.list_box ul{
+    list-style: none;
+}
+
+.control_box{
+    display: flex;
+    height: 65px;
+}
+.control_box .send{
+    width: 100px;
+}
